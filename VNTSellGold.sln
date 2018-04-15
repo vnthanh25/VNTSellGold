@@ -1,0 +1,27 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VNTSellGold", "VNTSellGold.csproj", "{205F6BEA-9839-43DE-A15F-3F9A0765EDD8}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "SetupSellGold", "SetupSellGold\SetupSellGold.vdproj", "{38C113DD-DBF5-4707-AFDD-3F761B23984C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{205F6BEA-9839-43DE-A15F-3F9A0765EDD8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{205F6BEA-9839-43DE-A15F-3F9A0765EDD8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{205F6BEA-9839-43DE-A15F-3F9A0765EDD8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{205F6BEA-9839-43DE-A15F-3F9A0765EDD8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{38C113DD-DBF5-4707-AFDD-3F761B23984C}.Debug|Any CPU.ActiveCfg = Debug
+		{38C113DD-DBF5-4707-AFDD-3F761B23984C}.Release|Any CPU.ActiveCfg = Release
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		VisualSVNWorkingCopyRoot = .
+	EndGlobalSection
+EndGlobal

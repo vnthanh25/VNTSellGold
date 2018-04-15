@@ -1,0 +1,2 @@
+﻿1/. Lấy giá resource cục bộ trong Form :
+	- System.Resources.ResourceManager rm = new System.Resources.ResourceManager(pType); //typeof(FrmTbl3Edit)

@@ -1,0 +1,90 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Database Name="VNTSellGold" Class="LinqDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=.;Initial Catalog=VNTSellGold;Persist Security Info=True;User ID=Sa" SettingsObjectName="VNTSellGold.Properties.Settings" SettingsPropertyName="VNTSellGoldConnectionString1" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.Tbl1" Member="Tbl1s">
+    <Type Name="Tbl1">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="SCol1" Type="System.String" DbType="NVarChar(200) NOT NULL" CanBeNull="false" />
+      <Association Name="Tbl1_Tbl5" Member="Tbl5s" OtherKey="IdTbl1" Type="Tbl5" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Tbl7" Member="Tbl7s">
+    <Type Name="Tbl7">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="IdTbl4" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="IdTbl5" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="DTCol1" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="MCol1" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="SCol1" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Association Name="Tbl4_Tbl7" Member="Tbl4" ThisKey="IdTbl4" Type="Tbl4" IsForeignKey="true" />
+      <Association Name="Tbl5_Tbl7" Member="Tbl5" ThisKey="IdTbl5" Type="Tbl5" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Tbl2" Member="Tbl2s">
+    <Type Name="Tbl2">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="SCol1" Type="System.String" DbType="NVarChar(200) NOT NULL" CanBeNull="false" />
+      <Association Name="Tbl2_Tbl5" Member="Tbl5s" OtherKey="IdTbl2" Type="Tbl5" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Tbl3" Member="Tbl3s">
+    <Type Name="Tbl3">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="ICol1" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="SCol1" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="SCol2" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="SCol3" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="SCol4" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="SCol5" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="SCol6" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="DTCol1" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Association Name="Tbl3_Tbl6" Member="Tbl6s" OtherKey="IdTbl3" Type="Tbl6" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Tbl4" Member="Tbl4s">
+    <Type Name="Tbl4">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="ICol1" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="SCol1" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="SCol2" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="SCol3" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="SCol4" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="SCol5" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="DTCol1" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Association Name="Tbl4_Tbl7" Member="Tbl7s" OtherKey="IdTbl4" Type="Tbl7" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Tbl6" Member="Tbl6s">
+    <Type Name="Tbl6">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="IdTbl3" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="IdTbl5" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="DTCol1" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="DTCol2" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Association Name="Tbl3_Tbl6" Member="Tbl3" ThisKey="IdTbl3" Type="Tbl3" IsForeignKey="true" />
+      <Association Name="Tbl5_Tbl6" Member="Tbl5" ThisKey="IdTbl5" Type="Tbl5" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Tbl5" Member="Tbl5s">
+    <Type Name="Tbl5">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="IdTbl1" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="IdTbl2" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ICol1" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ICol2" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ICol3" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="MCol1" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="MCol2" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="SCol1" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Column Name="SCol2" Type="System.String" DbType="NVarChar(1000)" CanBeNull="true" />
+      <Column Name="CreateBy" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="CreateDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="ModifyBy" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="ModifyDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Association Name="Tbl5_Tbl7" Member="Tbl7s" OtherKey="IdTbl5" Type="Tbl7" />
+      <Association Name="Tbl5_Tbl6" Member="Tbl6s" OtherKey="IdTbl5" Type="Tbl6" />
+      <Association Name="Tbl1_Tbl5" Member="Tbl1" ThisKey="IdTbl1" Type="Tbl1" IsForeignKey="true" />
+      <Association Name="Tbl2_Tbl5" Member="Tbl2" ThisKey="IdTbl2" Type="Tbl2" IsForeignKey="true" />
+    </Type>
+  </Table>
+</Database>
